@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestión de fichas · Puesta en marcha</title>
+<style>
+  :root{ --ink:#1c1d21; --muted:#6b7280; --line:#e4e6eb; --coral:#f2635f;
+         --orange:#f0904a; --black:#0d0d0f; --pink:#f9e4e3; --ok:#1f9d63; --bg:#f4f5f7; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);
+       font:16px/1.65 system-ui,"Segoe UI",Roboto,sans-serif;padding:0 0 60px}
+  header{background:var(--black);color:#fff;padding:26px 20px}
+  .wrap{max-width:820px;margin:0 auto;padding:0 20px}
+  header .wrap{display:flex;align-items:center;gap:14px}
+  .mk{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--coral),var(--orange));font-weight:800;font-size:17px}
+  header small{color:#b8bcc4;display:block}
+  h1{font-size:22px}
+  h2{font-size:20px;margin:34px 0 10px}
+  h3{font-size:16px;margin:18px 0 6px}
+  p{margin:10px 0}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px;
+        margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.07),0 8px 24px rgba(0,0,0,.05)}
+  .paso{display:grid;grid-template-columns:38px 1fr;gap:16px;align-items:start;margin:18px 0}
+  .num{width:38px;height:38px;border-radius:50%;background:var(--coral);color:#fff;
+       display:grid;place-items:center;font-weight:800}
+  .btn{display:inline-block;background:linear-gradient(135deg,var(--coral),var(--orange));
+       color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:10px;margin:8px 0}
+  .btn.gris{background:#fff;color:var(--ink);border:1px solid var(--line)}
+  code{background:var(--pink);padding:2px 7px;border-radius:5px;
+       font-family:ui-monospace,Consolas,monospace;font-size:14px}
+  pre{background:#15161a;color:#e8e8ea;padding:14px 16px;border-radius:10px;overflow-x:auto;
+      font-family:ui-monospace,Consolas,monospace;font-size:13.5px;line-height:1.7;margin:12px 0}
+  pre .c{color:#8b8f98}
+  .ok{color:var(--ok);font-weight:700}
+  .aviso{background:#fdecd6;border-left:4px solid var(--orange);padding:14px 18px;
+         border-radius:0 10px 10px 0;margin:16px 0}
+  .verde{background:#d9f2e5;border-left-color:var(--ok)}
+  .rojo{background:#fde3e2;border-left-color:var(--coral)}
+  table{width:100%;border-collapse:collapse;margin:12px 0}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);font-size:15px}
+  th{background:var(--pink);font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+  .muted{color:var(--muted);font-size:14px}
+  footer{color:var(--muted);font-size:13px;margin-top:40px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="mk">GF</div>
+    <div>
+      <h1>Gestión de fichas</h1>
+      <small>Asesoría Albereda 36, S.L. — puesta en marcha</small>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="aviso verde">
+    <b>Resumen en una línea:</b> solo hace falta instalar <b>un</b> programa gratuito
+    (Node.js). Se instala una vez y ya no se vuelve a tocar.
+  </div>
+
+  <h2>1 · Poner el programa en marcha</h2>
+
+  <div class="card">
+    <div class="paso">
+      <div class="num">1</div>
+      <div>
+        <b>Instalar Node.js</b> — es el motor que hace funcionar el programa. Es gratuito
+        y lo mantiene una fundación sin ánimo de lucro. No pide registro ni datos.
+        <br>
+        <a class="btn" href="https://nodejs.org/es/download" target="_blank" rel="noopener">
+          Descargar Node.js (versión LTS)</a>
+        <p class="muted">Elige <b>Windows Installer (.msi)</b> y la versión que ponga
+        <b>LTS</b>. En la instalación, pulsa <i>Siguiente</i> en todas las pantallas.</p>
+      </div>
+    </div>
+
+    <div class="paso">
+      <div class="num">2</div>
+      <div>
+        <b>Reiniciar el ordenador.</b> Hace falta para que Windows reconozca el programa
+        recién instalado.
+      </div>
+    </div>
+
+    <div class="paso">
+      <div class="num">3</div>
+      <div>
+        <b>Abrir el programa.</b> Doble clic en <code>INICIAR.bat</code>, dentro de la
+        carpeta <code>gestion-fichas</code>. Se abre solo en el navegador, en
+        <code>http://localhost:4360</code>.
+        <p class="muted">Consejo: clic derecho sobre <code>INICIAR.bat</code> →
+        <i>Enviar a</i> → <i>Escritorio (crear acceso directo)</i>, y lo tienes a mano.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="aviso">
+    <b>¿Se abre una ventana negra?</b> Sí, y es normal: pone el programa en marcha y, cuando
+    dice «LISTO», ya se puede cerrar. El programa sigue en otra ventana, minimizada en la barra
+    de tareas, llamada <b>«Gestion de fichas (programa)»</b>: para cerrar el programa, cierra esa.
+  </div>
+
+  <h2>2 · Decirle dónde está el archivo de facturas</h2>
+
+  <p>Esto se hace <b>una sola vez</b>. Hay dos maneras y basta con una.</p>
+
+  <div class="card">
+    <h3>Lo más cómodo: desde el propio programa</h3>
+    <p>Mientras el programa no sepa dónde están las facturas, arriba del todo sale un aviso
+    naranja: <b>«Falta la carpeta de las facturas»</b>. Pulsa <b>Elegir la carpeta</b> (o entra
+    en la pestaña <b>Configuración</b>) y verás lo primero de la pantalla:</p>
+    <ul>
+      <li><b>Buscarla por mí</b> — el programa mira en los sitios habituales y propone las
+      carpetas que parecen el archivo. Pulsa <b>Usar esta</b> en la correcta.</li>
+      <li>O pega la ruta a mano y pulsa <b>Comprobar</b>.</li>
+    </ul>
+    <p>En los dos casos el programa <b>cuenta cuántos documentos encuentra dentro</b> y te lo
+    dice: «Se encuentran 1185 de 1185». Si sale 0, la carpeta elegida no es esa: normalmente
+    hay que subir o bajar un nivel. Así se ve el fallo al momento, y no una semana después
+    cuando un PDF no abre.</p>
+  </div>
+
+  <p>La otra manera es el archivo de texto <code>.env</code>, que está dentro de la carpeta
+  <code>gestion-fichas</code>, justo al lado de <code>INICIAR.bat</code>. Se abre con el Bloc
+  de notas. Lo que se ponga ahí manda sobre lo elegido en el programa.</p>
+
+  <div class="card">
+    <h3>Lo único obligatorio</h3>
+    <pre><span class="c"># Carpeta donde están las facturas. Es la única línea imprescindible.</span>
+GF_RUTA_ARCHIVO=D:\Asesoria\Archivo</pre>
+    <p class="muted">Pon ahí la ruta real de la carpeta. Para copiarla: abre la carpeta en
+    el explorador de Windows, haz clic en la barra de dirección de arriba, y copia lo que
+    aparece.</p>
+
+    <h3>Lo demás, opcional</h3>
+    <pre><span class="c"># Puerto en el que escucha el programa. Solo cámbialo si 4360 está ocupado.</span>
+PORT=4360
+
+<span class="c"># Dónde se guardan las facturas que entran por «Importar».</span>
+<span class="c"># Por defecto, dentro del programa (data\archivo). Mejor en una carpeta</span>
+<span class="c"># que entre en la copia de seguridad del despacho:</span>
+<span class="c"># GF_CARPETA_IMPORTADAS=D:\Asesoria\Importadas</span>
+
+<span class="c"># Usarlo desde otros ordenadores de la oficina. Por defecto, NO: solo</span>
+<span class="c"># funciona en este equipo. Si se activa, la contraseña es obligatoria.</span>
+<span class="c"># GF_HOST=0.0.0.0</span>
+<span class="c"># GF_CLAVE_ACCESO=una-contraseña-larga</span>
+
+<span class="c"># Servidor de archivos de la oficina. Todavía no está montado:</span>
+<span class="c"># mientras siga con # delante, el programa lo ignora.</span>
+<span class="c"># GF_API_URL=http://192.168.1.50:8080/api</span>
+<span class="c"># GF_API_KEY=</span></pre>
+  </div>
+
+  <div class="aviso">
+    <b>Tres reglas de ese archivo:</b> una línea por dato, con el formato
+    <code>NOMBRE=valor</code>, sin comillas y sin espacios alrededor del <code>=</code>.
+    Las líneas que empiezan por <code>#</code> se ignoran.
+    Y lo más importante: <b>después de tocarlo hay que cerrar el programa y volver a
+    abrirlo</b>, porque solo se lee al arrancar.
+  </div>
+
+  <div class="aviso rojo">
+    <b>Sobre <code>GF_API_KEY</code>:</b> ahí va <b>únicamente</b> la clave del servidor de
+    archivos de la oficina. No pongas claves de otros servicios: esa clave se envía tal cual
+    a la dirección que figure en <code>GF_API_URL</code> cada vez que se sincroniza.
+  </div>
+
+  <h2>3 · Qué vas a ver dentro</h2>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>Pestaña</th><th>Para qué sirve</th></tr></thead>
+      <tbody>
+        <tr><td><b>Inicio</b></td><td>Lo que hay pendiente hoy y las cifras del despacho</td></tr>
+        <tr><td><b>📁 Archivo</b></td><td>El explorador de carpetas: cliente → año → trimestre → emitidas/gastos → mes → semana → día. Busca por nombre, número, proveedor o importe</td></tr>
+        <tr><td><b>📥 Importar</b></td><td>Donde entran las facturas nuevas (ver abajo)</td></tr>
+        <tr><td><b>⚠ Revisar</b></td><td>Lo que el programa propone clasificar solo (se aprueba por bloques) y los importes por confirmar</td></tr>
+        <tr><td><b>🕘 Trazabilidad</b></td><td>El historial: qué documento cambió, qué tenía antes, qué tiene ahora, si lo hizo el programa o una persona, y el botón de deshacer</td></tr>
+        <tr><td><b>Facturas</b></td><td>Todas las facturas con base, IVA, IRPF y total. Filtra por cliente y trimestre y descarga el Excel</td></tr>
+        <tr><td><b>Clientes</b></td><td>Las fichas de los clientes. Su NIF sirve para reconocer sus facturas</td></tr>
+        <tr><td><b>Informes</b></td><td>Resumen por trimestre al estilo del modelo 303: base e IVA de emitidas y recibidas</td></tr>
+        <tr><td><b>Documentos</b></td><td>Archivos sueltos subidos a mano</td></tr>
+        <tr><td><b>Grupos · Mapa</b></td><td>Tipos de ficha y el mapa de quién está relacionado con qué</td></tr>
+        <tr><td><b>Configuración</b></td><td>Solo hará falta el día que se monte el servidor de la oficina</td></tr>
+      </tbody>
+    </table>
+
+    <p>En <b>📁 Archivo</b>, cada documento tiene tres botones:
+    <b>Ver</b> (lo abre aquí mismo, en el navegador),
+    <b>Carpeta</b> (abre su carpeta en el Explorador de Windows) y
+    <b>Ficha</b> (todos sus datos, importes incluidos, y el botón para corregirlo).</p>
+
+    <p class="muted">Por seguridad, el programa solo abre archivos que estén dentro de la
+    carpeta del archivo o de la de importadas. Cualquier otra ruta se rechaza.</p>
+  </div>
+
+  <h2>4 · Entrar facturas nuevas</h2>
+
+  <div class="card">
+    <div class="paso"><div class="num">1</div><div>En <b>📥 Importar</b>, <b>arrastra los PDF</b> (o
+      pulsa «elígelos»). Pueden ser muchos a la vez.</div></div>
+    <div class="paso"><div class="num">2</div><div>El programa propone para cada uno: cliente, año,
+      trimestre, si es <b>emitida</b> (ingreso) o <b>recibida</b> (gasto), número, fecha e importes
+      (si el PDF tiene texto). Cada fila sale de un color:
+      <br><span class="ok">verde</span> = lista ·
+      <b style="color:#c9803a">ámbar</b> = compruébala o completa algún dato ·
+      <b style="color:#f2635f">roja</b> = aviso grave.</div></div>
+    <div class="paso"><div class="num">3</div><div>Pulsa <b>«ver PDF»</b> en las dudosas, corrige lo que
+      haga falta y márcalas. Luego, <b>«Importar marcadas»</b>. Lo que no quieras, «Descartar».</div></div>
+    <div class="aviso">
+      <b>Avisos graves (fila roja):</b> la factura <b>ya estaba</b> en el archivo, o su <b>número ya
+      existe</b> para ese cliente y año, o el número no sigue la numeración del cliente. No se
+      importan salvo que marques «Importar igualmente».
+    </div>
+    <p class="muted">Si cierras la ventana a medias no se pierde nada: al volver a «Importar»
+    siguen ahí. Lo que se deja sin confirmar se borra solo a los 14 días.</p>
+    <p class="muted"><b>Para un lote de un mismo cliente y trimestre</b> (por ejemplo, el 4T 2022
+    de Alfonso cuando se extraiga del .rar con WinRAR): abre «Datos comunes del lote», elige
+    cliente, año y trimestre, y suelta todo.</p>
+  </div>
+
+  <h2>5 · Revisar e importes</h2>
+
+  <div class="card">
+    <p>En <b>⚠ Revisar</b> hay dos apartados:</p>
+    <p><b>Clasificación</b>: arriba salen los <b>bloques</b> que el programa ya sabe resolver.
+    Cada bloque dice cuántos documentos son, en qué quedarán y por qué; con <b>Ver los N</b> se
+    revisa uno a uno antes de decidir. Se aprueban de golpe:</p>
+    <ul>
+      <li><b>Seguros</b> (copias repetidas y justificantes que no son factura): no cambian
+      ninguna cifra. El botón <b>Aprobar los N seguros</b> los hace todos de una vez.</li>
+      <li><b>Cambian cifras</b> (facturas propias archivadas como gasto, emitidas en otro
+      trimestre): míralos antes; mueven dinero de un trimestre o de un signo a otro.</li>
+      <li><b>Decisión del despacho</b> (gastos archivados en otro trimestre): puede estar bien
+      como está, porque una factura que llega tarde se deduce después.</li>
+    </ul>
+    <p>Todo lo aprobado queda en <b>🕘 Trazabilidad</b> y se puede <b>deshacer</b> documento a
+    documento. Debajo de los bloques queda lo que necesita ojo humano: para cada uno,
+    <b>Ver</b>, <b>Corregir</b> (cambiar cliente, trimestre o tipo) o <b>Está bien</b>. Las
+    correcciones solo cambian los datos del programa: el fichero no se mueve ni se borra.</p>
+    <p><b>Importes</b>: los que el programa ha leído de los PDF (hay que confirmarlos) y los que
+    faltan (escaneos: se escriben a mano). Base, IVA e IRPF calculan el total solos, y no se
+    admite un importe que no cuadre.</p>
+    <div class="aviso">
+      <b>Importante:</b> un importe leído a máquina es una propuesta. Antes de presentar un
+      impuesto, confirma los de ese trimestre. El informe del trimestre avisa si quedan
+      importes sin confirmar.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>El documento, al lado de lo que estás escribiendo</h3>
+    <p>El botón <b>Ver</b> abre el PDF en una ventana pegada a la derecha, sin salir de la
+    lista: se lee el importe en el papel y se escribe en la fila de al lado. Con <b>⇔</b> se
+    hace más ancha, con <b>✕</b> (o la tecla Esc) se cierra, y <b>Pestaña aparte</b> lo abre
+    entero en otra pestaña del navegador.</p>
+    <p class="muted">Si el documento no aparece, el programa dice por qué y ofrece ir a
+    Configuración: casi siempre es que la carpeta de las facturas está mal elegida o que
+    alguien movió el fichero desde fuera del programa.</p>
+  </div>
+
+  <h2>6 · El programa se actualiza solo</h2>
+
+  <div class="card">
+    <p>Cuando hay una versión nueva, se instala <b>sola al abrir el programa</b>. No hay que
+    descargar nada ni volver a instalar. Si ya lo tienes abierto, sale arriba un aviso azul
+    con el botón <b>Instalar ahora</b>, y si prefieres, esperas a la próxima vez que lo abras.</p>
+    <ul>
+      <li><b>Tus datos no se tocan nunca.</b> Una actualización solo trae programa; tus
+      facturas, tus correcciones y el archivo <code>.env</code> se quedan como están.</li>
+      <li><b>Si una versión nueva fallase</b>, el programa vuelve solo a la anterior y no
+      la intenta otra vez.</li>
+      <li>En <b>Configuración › Versión del programa</b> ves la versión que tienes, cuándo
+      se comprobó por última vez, y un botón para volver a la anterior si algo no te convence.</li>
+      <li>La versión aparece también arriba a la izquierda, debajo del nombre. Es lo primero
+      que conviene decir al pedir ayuda.</li>
+    </ul>
+  </div>
+
+  <h2>7 · Copias de seguridad</h2>
+
+  <div class="card">
+    <p>El programa guarda solo una copia de sus datos <b>cada día</b> en
+    <code>gestion-fichas\data\copias</code> (las 30 últimas).</p>
+    <p class="muted">Aun así, conviene que la carpeta <code>gestion-fichas\data</code> entre en
+    la copia de seguridad habitual del despacho: ahí están los datos y las facturas importadas.
+    Para recuperar un día concreto: cierra el programa, copia el fichero de ese día sobre
+    <code>data\db.json</code> y vuelve a abrirlo.</p>
+  </div>
+
+  <h2>8 · Para reorganizar el archivo (opcional)</h2>
+
+  <p>Esto solo lo necesita quien vaya a ejecutar las herramientas de ordenación masiva.
+  Para el uso normal del programa <b>no hace falta</b>.</p>
+
+  <div class="card">
+    <b>Python 3.13 o superior</b>
+    <p class="muted">También gratuito. En la primera pantalla del instalador, marca la
+    casilla <b>«Add Python to PATH»</b> antes de continuar.</p>
+    <a class="btn gris" href="https://www.python.org/downloads/" target="_blank" rel="noopener">
+      Descargar Python</a>
+  </div>
+
+  <h2>Resumen de lo que hay que instalar</h2>
+
+  <table>
+    <thead><tr><th>Programa</th><th>¿Obligatorio?</th><th>Para qué</th><th>Coste</th></tr></thead>
+    <tbody>
+      <tr><td><b>Node.js</b> (LTS)</td><td class="ok">Sí</td>
+          <td>Hacer funcionar la Gestión de fichas</td><td>Gratis</td></tr>
+      <tr><td><b>Python</b> 3.13+</td><td>No</td>
+          <td>Reordenar el archivo de facturas</td><td>Gratis</td></tr>
+      <tr><td>Navegador</td><td class="ok">Sí</td>
+          <td>Ya lo tienes: Edge, Chrome o Firefox</td><td>Gratis</td></tr>
+    </tbody>
+  </table>
+
+  <p class="muted">No hay ninguna cuota, ni cuentas que crear, ni servicios en la nube.
+  El programa funciona dentro de vuestra red y los datos no salen del despacho.</p>
+
+  <h2>Si algo no funciona</h2>
+
+  <div class="card">
+    <p><b>«No se encuentra Node.js»</b> al abrir <code>INICIAR.bat</code><br>
+    <span class="muted">Node no está instalado o falta reiniciar. Repite los pasos 1 y 2.</span></p>
+
+    <p><b>El navegador dice «No se puede acceder a este sitio»</b><br>
+    <span class="muted">El programa aún está arrancando. Espera 10 segundos y actualiza
+    la página con F5.</span></p>
+
+    <p><b>Dice que el puerto 4360 está ocupado</b><br>
+    <span class="muted">El programa ya estaba abierto. Busca la ventana «Gestion de fichas (programa)» en la barra
+    de tareas, o entra directamente en
+    <a href="http://localhost:4360">http://localhost:4360</a>.</span></p>
+
+    <p><b>Le doy a «Ver» y dice que no encuentra el documento</b><br>
+    <span class="muted">El programa no sabe dónde está la carpeta de las facturas en este
+    ordenador, o la que tiene apuntada ya no es esa. Entra en <b>Configuración</b>, usa
+    <b>Buscarla por mí</b> o pega la ruta, y comprueba que dice «Se encuentran … de …» con
+    los dos números iguales. Si un fichero concreto sigue sin aparecer, es que se movió o se
+    borró desde fuera del programa.</span></p>
+
+    <p><b>El programa no arranca y el registro dice que la base de datos «está dañada» o «no se puede leer»</b><br>
+    <span class="muted">El programa se ha parado a propósito para no estropear nada: tus datos
+    NO se han tocado. Si es un bloqueo momentáneo (antivirus, copia de seguridad en marcha),
+    vuelve a abrirlo en un minuto. Si sigue, en <code>gestion-fichas\data\copias</code> hay una
+    copia de cada día: copia la más reciente encima de <code>gestion-fichas\data\db.json</code>
+    y vuelve a abrir el programa.</span></p>
+
+    <p><b>He cerrado la ventana negra y el programa sigue funcionando</b><br>
+    <span class="muted">Es lo normal: la ventana que ves al abrir solo lo pone en marcha. El
+    programa vive en otra, minimizada en la barra de tareas, llamada
+    «Gestion de fichas (programa)». Para cerrarlo del todo, cierra esa.</span></p>
+
+    <p><b>He cambiado el <code>.env</code> y no pasa nada</b><br>
+    <span class="muted">Ese archivo solo se lee al arrancar. Cierra la ventana «Gestion de fichas (programa)» de la barra de tareas y
+    vuelve a abrir <code>INICIAR.bat</code>.</span></p>
+
+    <p><b>Desde otro ordenador no abre</b><br>
+    <span class="muted">Es lo normal: por seguridad el programa solo atiende a este equipo.
+    Para usarlo desde la red hay que poner <code>GF_HOST</code> y <code>GF_CLAVE_ACCESO</code>
+    en el <code>.env</code>.</span></p>
+
+    <p><b>Una factura no aparece al importarla</b><br>
+    <span class="muted">Mira si salió en rojo: puede que ya estuviera en el archivo o que su
+    número ya exista. El aviso dice dónde está la otra.</span></p>
+
+    <p><b>«La API respondió 404»</b> al pulsar Sincronizar<br>
+    <span class="muted">La dirección de <code>GF_API_URL</code> no es la del servidor de
+    archivos. Ojo: <b>no</b> es la dirección de este programa. Mientras no exista ese
+    servidor, deja esa línea comentada con <code>#</code> y no uses ese botón: el resto
+    funciona igual.</span></p>
+
+    <p><b>Cualquier otra cosa</b><br>
+    <span class="muted">En la carpeta del programa se crea un archivo
+    <code>servidor.log</code>. Envíalo y lo miramos.</span></p>
+  </div>
+
+  <footer>
+    Gestión de fichas · Asesoría Albereda 36, S.L.<br>
+    Preparado por 10 Skills · hola@10skills.io
+  </footer>
+
+</div>
+</body>
+</html>
