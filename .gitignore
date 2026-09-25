@@ -1,0 +1,7 @@
+# En este repositorio solo va el canal: nada de configuración, datos ni documentos.
+.env
+*.log
+*.docx
+*.pem
+data/
+node_modules/
