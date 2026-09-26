@@ -1,10 +1,10 @@
 {
   "formato": 1,
-  "version": "1.1.0",
-  "fecha": "2026-09-23T17:35:49.885Z",
-  "notas": "Primera versión con actualizaciones automáticas",
-  "paquete": "gestion-fichas-1.1.0.gfpaq",
-  "tamano": 225216,
-  "sha256": "7d4895e4a4aff1fe249f31031224faeafd928de3f06b7c3bb531095541879b38",
-  "firma": "bKP5ojoW6/lMmWZFEZomOajOQ4L3Tdq5CXyCXoNdD3rGCQn3eMoxUkAaqQeB91hONTP1mouYYsAB+DgxcckzAw=="
+  "version": "1.1.1",
+  "fecha": "2026-09-26T11:05:06.138Z",
+  "notas": "Importar una carpeta entera: se miran todas sus subcarpetas y cada factura se coloca sola en su cliente, año, trimestre y tipo cuando no hay duda (lo dudoso queda para revisar). Los importes leídos del PDF quedan por confirmar. «Buscarla por mí» ya no confunde el archivo con una copia parcial.",
+  "paquete": "gestion-fichas-1.1.1.gfpaq",
+  "tamano": 232985,
+  "sha256": "d836433445fec0a43f3d13a9948fef3716f65bd26dd56249ef0effd394a2a3e1",
+  "firma": "XeYigdQtjSs2NzWajpR4eYXuRFdPH8tVg7POMRxAYOedzaFxIiGzw8H89NUG9JmfiiHu4DTTkrzioWrQsAaTAg=="
 }

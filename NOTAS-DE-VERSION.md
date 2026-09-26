@@ -2,6 +2,10 @@
 
 La más reciente, arriba. Cada una llega sola a los programas instalados la próxima vez que se abren.
 
+## 1.1.1 — 2026-09-26
+
+Importar una carpeta entera: se miran todas sus subcarpetas y cada factura se coloca sola en su cliente, año, trimestre y tipo cuando no hay duda (lo dudoso queda para revisar). Los importes leídos del PDF quedan por confirmar. «Buscarla por mí» ya no confunde el archivo con una copia parcial.
+
 ## 1.1.0 — 2026-09-23
 
 Primera versión con actualizaciones automáticas.
