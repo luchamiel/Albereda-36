@@ -1,10 +1,10 @@
 {
   "formato": 1,
-  "version": "1.1.1",
-  "fecha": "2026-09-26T11:05:06.138Z",
-  "notas": "Importar una carpeta entera: se miran todas sus subcarpetas y cada factura se coloca sola en su cliente, año, trimestre y tipo cuando no hay duda (lo dudoso queda para revisar). Los importes leídos del PDF quedan por confirmar. «Buscarla por mí» ya no confunde el archivo con una copia parcial.",
-  "paquete": "gestion-fichas-1.1.1.gfpaq",
-  "tamano": 232985,
-  "sha256": "d836433445fec0a43f3d13a9948fef3716f65bd26dd56249ef0effd394a2a3e1",
-  "firma": "XeYigdQtjSs2NzWajpR4eYXuRFdPH8tVg7POMRxAYOedzaFxIiGzw8H89NUG9JmfiiHu4DTTkrzioWrQsAaTAg=="
+  "version": "1.1.2",
+  "fecha": "2026-09-29T17:04:56.350Z",
+  "notas": "Ordenar una carpeta nueva: el programa lee una carpeta sin ordenar, reconoce los clientes y coloca cada factura en su cliente, año, trimestre y tipo (antes guarda una copia de todo y se puede recuperar). Lee los escaneos y las fotos de tickets con el OCR de Windows, sin que nada salga del ordenador. Al importar se puede indicar que toda la carpeta es de un cliente, decidir de golpe las facturas del mismo proveedor y repasar las dudosas con «Revisión rápida» desde el teclado.",
+  "paquete": "gestion-fichas-1.1.2.gfpaq",
+  "tamano": 284107,
+  "sha256": "76cc8639ca2caaebeaac2703c1367fdaf7af4ff672933300bbba3d81f2a31008",
+  "firma": "kMCLheVnT2TzUnIMvEkCOncwtXCIKEFd69zOz+6yxOpDMSExTbPZBPvVrOn9bVhseVHTKSwlOUYz8lig1pFGDg=="
 }
