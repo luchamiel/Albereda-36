@@ -1,10 +1,10 @@
 {
   "formato": 1,
-  "version": "1.1.2",
-  "fecha": "2026-09-29T17:04:56.350Z",
-  "notas": "Ordenar una carpeta nueva: el programa lee una carpeta sin ordenar, reconoce los clientes y coloca cada factura en su cliente, año, trimestre y tipo (antes guarda una copia de todo y se puede recuperar). Lee los escaneos y las fotos de tickets con el OCR de Windows, sin que nada salga del ordenador. Al importar se puede indicar que toda la carpeta es de un cliente, decidir de golpe las facturas del mismo proveedor y repasar las dudosas con «Revisión rápida» desde el teclado.",
-  "paquete": "gestion-fichas-1.1.2.gfpaq",
-  "tamano": 284107,
-  "sha256": "76cc8639ca2caaebeaac2703c1367fdaf7af4ff672933300bbba3d81f2a31008",
-  "firma": "kMCLheVnT2TzUnIMvEkCOncwtXCIKEFd69zOz+6yxOpDMSExTbPZBPvVrOn9bVhseVHTKSwlOUYz8lig1pFGDg=="
+  "version": "1.1.3",
+  "fecha": "2026-10-03T20:18:38.609Z",
+  "notas": "Facturas repetidas, emitida o recibida según el cliente de la factura, separar PDFs con varias facturas, filtro por periodo, empresa/CIF/código postal, exportar a Excel, ZIP o un solo PDF, plantillas de Hacienda y «Descartar» en Revisar. Nuevo: «Actualizar desde un fichero…» instala actualizaciones firmadas (.actualizacion) sin internet. «Quitarlo del programa» ya no mueve nunca el original del cliente.",
+  "paquete": "gestion-fichas-1.1.3.gfpaq",
+  "tamano": 650283,
+  "sha256": "10a6b317d2b5af28042915a5df4b184e52aff90c3d3806a72732b7694ede5fab",
+  "firma": "/PKpLiS4LZL020k26cYseFCJJol+ndmqUuVRXBT1+H1oqRWMH1MR5HtDUqkp6t4OCLEVfvdacH9UQRpoUOgKDA=="
 }

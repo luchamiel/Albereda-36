@@ -2,6 +2,10 @@
 
 La más reciente, arriba. Cada una llega sola a los programas instalados la próxima vez que se abren.
 
+## 1.1.3 — 2026-10-03
+
+Facturas repetidas, emitida o recibida según el cliente de la factura, separar PDFs con varias facturas, filtro por periodo, empresa/CIF/código postal, exportar a Excel, ZIP o un solo PDF, plantillas de Hacienda y «Descartar» en Revisar. Nuevo: «Actualizar desde un fichero…» instala actualizaciones firmadas (.actualizacion) sin internet. «Quitarlo del programa» ya no mueve nunca el original del cliente.
+
 ## 1.1.2 — 2026-09-29
 
 Ordenar una carpeta nueva: el programa lee una carpeta sin ordenar, reconoce los clientes y coloca cada factura en su cliente, año, trimestre y tipo (antes guarda una copia de todo y se puede recuperar). Lee los escaneos y las fotos de tickets con el OCR de Windows, sin que nada salga del ordenador. Al importar se puede indicar que toda la carpeta es de un cliente, decidir de golpe las facturas del mismo proveedor y repasar las dudosas con «Revisión rápida» desde el teclado.
