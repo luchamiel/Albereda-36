@@ -2,6 +2,10 @@
 
 La más reciente, arriba. Cada una llega sola a los programas instalados la próxima vez que se abren.
 
+## 1.1.4 — 2026-10-31
+
+Abonos en negativo (los dudosos van a Revisar «¿Abono?»), varios tipos de IVA en la misma fila, albaranes y justificantes en su carpeta, formatos de factura que se aprenden de las correcciones y fotos con varios tickets. Los PDF con varias facturas se leen hoja a hoja: en Importar salen en un bloque, una fila por factura, con un resumen y la suma debajo y el total de todo al final; los escaneos de varias hojas también se leen hoja a hoja.
+
 ## 1.1.3 — 2026-10-03
 
 Facturas repetidas, emitida o recibida según el cliente de la factura, separar PDFs con varias facturas, filtro por periodo, empresa/CIF/código postal, exportar a Excel, ZIP o un solo PDF, plantillas de Hacienda y «Descartar» en Revisar. Nuevo: «Actualizar desde un fichero…» instala actualizaciones firmadas (.actualizacion) sin internet. «Quitarlo del programa» ya no mueve nunca el original del cliente.
