@@ -2,6 +2,10 @@
 
 La más reciente, arriba. Cada una llega sola a los programas instalados la próxima vez que se abren.
 
+## 1.1.5 — 2026-11-02
+
+Revisión completa de la 1.1.4. Funciona en cualquier ordenador: archivo en la raíz de una unidad de red (Z:\), primer arranque sin datos, guardado aunque el antivirus u OneDrive tengan la base de datos abierta, aviso si otro equipo tiene el programa abierto en la misma carpeta, .env en ANSI, Node antiguo y OCR en español explicados. Lectura: varias facturas del mismo día en un PDF salen una por fila, las facturas seguidas de un escaneo ya no se juntan, recargo de equivalencia, abonos con el menos detrás o entre paréntesis. Importar y Revisar: «1.500» se lee como mil quinientos, los abonos se confirman, las facturas con varios tipos de IVA conservan su desglose y las sumas coinciden con el Excel. Los abonos importados antes de la 1.1.4 en positivo pasan una vez a Revisar «¿Abono?».
+
 ## 1.1.4 — 2026-10-31
 
 Abonos en negativo (los dudosos van a Revisar «¿Abono?»), varios tipos de IVA en la misma fila, albaranes y justificantes en su carpeta, formatos de factura que se aprenden de las correcciones y fotos con varios tickets. Los PDF con varias facturas se leen hoja a hoja: en Importar salen en un bloque, una fila por factura, con un resumen y la suma debajo y el total de todo al final; los escaneos de varias hojas también se leen hoja a hoja.

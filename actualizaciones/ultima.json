@@ -1,10 +1,10 @@
 {
   "formato": 1,
-  "version": "1.1.4",
-  "fecha": "2026-10-31T17:45:02.073Z",
-  "notas": "Abonos en negativo (los dudosos van a Revisar «¿Abono?»), varios tipos de IVA en la misma fila, albaranes y justificantes en su carpeta, formatos de factura que se aprenden de las correcciones y fotos con varios tickets. Los PDF con varias facturas se leen hoja a hoja: en Importar salen en un bloque, una fila por factura, con un resumen y la suma debajo y el total de todo al final; los escaneos de varias hojas también se leen hoja a hoja.",
-  "paquete": "gestion-fichas-1.1.4.gfpaq",
-  "tamano": 697970,
-  "sha256": "ff4b7a2dd662bfe85197651bef5f7aee237143424a1b1e8b6436e844610da314",
-  "firma": "Vug5feE8Kr4tW5t3lWyqDtBHKPratcw5aJFvuLG/belfRmzV9KtGrtz/kS1VKobkKMqv82VWzvWE69DEksr1Dw=="
+  "version": "1.1.5",
+  "fecha": "2026-11-02T08:43:07.060Z",
+  "notas": "Revisión completa de la 1.1.4. Funciona en cualquier ordenador: archivo en la raíz de una unidad de red (Z:\\), primer arranque sin datos, guardado aunque el antivirus u OneDrive tengan la base de datos abierta, aviso si otro equipo tiene el programa abierto en la misma carpeta, .env en ANSI, Node antiguo y OCR en español explicados. Lectura: varias facturas del mismo día en un PDF salen una por fila, las facturas seguidas de un escaneo ya no se juntan, recargo de equivalencia, abonos con el menos detrás o entre paréntesis. Importar y Revisar: «1.500» se lee como mil quinientos, los abonos se confirman, las facturas con varios tipos de IVA conservan su desglose y las sumas coinciden con el Excel. Los abonos importados antes de la 1.1.4 en positivo pasan una vez a Revisar «¿Abono?».",
+  "paquete": "gestion-fichas-1.1.5.gfpaq",
+  "tamano": 711204,
+  "sha256": "c7aa3d4f41baa3a4f7e4c8a4cbd19457ad11ffb084a081bfbe4d3444f2a76c78",
+  "firma": "8ITBiDr7mljcA4we2kGHiYdEDsYDxvzfa8/cTBwpj6E1OYOyUnl9d1la/m8NLs06YDT7f5+1BU41325O8CBlCg=="
 }
