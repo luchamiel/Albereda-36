@@ -5,3 +5,6 @@
 *.pem
 data/
 node_modules/
+
+# El ZIP de instalación se entrega aparte: nunca en el repositorio.
+instalacion/*.zip
