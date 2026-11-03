@@ -1,10 +1,10 @@
 {
   "formato": 1,
-  "version": "1.1.5",
-  "fecha": "2026-11-02T08:43:07.060Z",
-  "notas": "Revisión completa de la 1.1.4. Funciona en cualquier ordenador: archivo en la raíz de una unidad de red (Z:\\), primer arranque sin datos, guardado aunque el antivirus u OneDrive tengan la base de datos abierta, aviso si otro equipo tiene el programa abierto en la misma carpeta, .env en ANSI, Node antiguo y OCR en español explicados. Lectura: varias facturas del mismo día en un PDF salen una por fila, las facturas seguidas de un escaneo ya no se juntan, recargo de equivalencia, abonos con el menos detrás o entre paréntesis. Importar y Revisar: «1.500» se lee como mil quinientos, los abonos se confirman, las facturas con varios tipos de IVA conservan su desglose y las sumas coinciden con el Excel. Los abonos importados antes de la 1.1.4 en positivo pasan una vez a Revisar «¿Abono?».",
-  "paquete": "gestion-fichas-1.1.5.gfpaq",
-  "tamano": 711204,
-  "sha256": "c7aa3d4f41baa3a4f7e4c8a4cbd19457ad11ffb084a081bfbe4d3444f2a76c78",
-  "firma": "8ITBiDr7mljcA4we2kGHiYdEDsYDxvzfa8/cTBwpj6E1OYOyUnl9d1la/m8NLs06YDT7f5+1BU41325O8CBlCg=="
+  "version": "1.1.6",
+  "fecha": "2026-11-03T11:13:38.287Z",
+  "notas": "Mejor lectura de escaneos. El OCR rehace las filas como en la hoja (etiqueta a la izquierda, valor a la derecha) y endereza los escaneos torcidos: más escaneos analizados y muchos menos «Sin número de factura». Se reconocen números como «FACTURA 079-0003-353470» (Leroy Merlin, Bricomart) y «Número de la factura» (Amazon). Arreglado: al separar un PDF por hojas, el número de página del nombre ya no sale como número de factura. Los detalles de llamadas siguen con su factura aunque el OCR lea mal el número, y la primera hoja de la factura siguiente o dos facturas seguidas del mismo día ya no se juntan. Aviso si la fecha leída es posterior a hoy.",
+  "paquete": "gestion-fichas-1.1.6.gfpaq",
+  "tamano": 715252,
+  "sha256": "1018efd54946bd5de1b58064b1230e3b476fe927b069878cb15c0bc892ccf69c",
+  "firma": "dn21t5CwD6ZBSEcBo7YsUttMuhIOl6PAgMmPTCU6qp9e6XVmaE2z9/6IoSoof29BFDTJ7GjOXjcanSpAokR/DQ=="
 }

@@ -2,6 +2,10 @@
 
 La más reciente, arriba. Cada una llega sola a los programas instalados la próxima vez que se abren.
 
+## 1.1.6 — 2026-11-03
+
+Mejor lectura de escaneos. El OCR rehace las filas como en la hoja (etiqueta a la izquierda, valor a la derecha) y endereza los escaneos torcidos: más escaneos analizados y muchos menos «Sin número de factura». Se reconocen números como «FACTURA 079-0003-353470» (Leroy Merlin, Bricomart) y «Número de la factura» (Amazon). Arreglado: al separar un PDF por hojas, el número de página del nombre ya no sale como número de factura. Los detalles de llamadas siguen con su factura aunque el OCR lea mal el número, y la primera hoja de la factura siguiente o dos facturas seguidas del mismo día ya no se juntan. Aviso si la fecha leída es posterior a hoy.
+
 ## 1.1.5 — 2026-11-02
 
 Revisión completa de la 1.1.4. Funciona en cualquier ordenador: archivo en la raíz de una unidad de red (Z:\), primer arranque sin datos, guardado aunque el antivirus u OneDrive tengan la base de datos abierta, aviso si otro equipo tiene el programa abierto en la misma carpeta, .env en ANSI, Node antiguo y OCR en español explicados. Lectura: varias facturas del mismo día en un PDF salen una por fila, las facturas seguidas de un escaneo ya no se juntan, recargo de equivalencia, abonos con el menos detrás o entre paréntesis. Importar y Revisar: «1.500» se lee como mil quinientos, los abonos se confirman, las facturas con varios tipos de IVA conservan su desglose y las sumas coinciden con el Excel. Los abonos importados antes de la 1.1.4 en positivo pasan una vez a Revisar «¿Abono?».
