@@ -2,6 +2,10 @@
 
 La más reciente, arriba. Cada una llega sola a los programas instalados la próxima vez que se abren.
 
+## 1.1.7 — 2026-11-03
+
+Deja de ser una demostración: un programa recién instalado empieza vacío, sin clientes, facturas ni grupos de ejemplo, y los que ya están instalados pierden solo los grupos, el servidor, el periodo y la nota de ejemplo (sus clientes, facturas y documentos no se tocan). Nuevo «Historial»: cada cosa que se hace en el programa (importar, ordenar, revisar, exportar, clientes, facturas, configuración, actualizaciones y cada vez que se abre) queda apuntada con su fecha y equipo, aparte de los datos, así que ni ordenar una carpeta nueva ni recuperar una copia la borran; se puede filtrar y descargar en CSV. Al crear un informe se propone el trimestre que toca presentar.
+
 ## 1.1.6 — 2026-11-03
 
 Mejor lectura de escaneos. El OCR rehace las filas como en la hoja (etiqueta a la izquierda, valor a la derecha) y endereza los escaneos torcidos: más escaneos analizados y muchos menos «Sin número de factura». Se reconocen números como «FACTURA 079-0003-353470» (Leroy Merlin, Bricomart) y «Número de la factura» (Amazon). Arreglado: al separar un PDF por hojas, el número de página del nombre ya no sale como número de factura. Los detalles de llamadas siguen con su factura aunque el OCR lea mal el número, y la primera hoja de la factura siguiente o dos facturas seguidas del mismo día ya no se juntan. Aviso si la fecha leída es posterior a hoy.
