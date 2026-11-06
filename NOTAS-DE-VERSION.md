@@ -2,6 +2,10 @@
 
 La más reciente, arriba. Cada una llega sola a los programas instalados la próxima vez que se abren.
 
+## 1.1.8 — 2026-11-06
+
+Los PDF con varias facturas se guardan ENTEROS: un solo fichero en la carpeta, con una factura por grupo de páginas (cada una en su trimestre en el IVA y el Excel). Las páginas se agrupan por número de factura con doble revisión (otro número en una hoja, «Página X de Y», dos totales, sin total): lo dudoso se guarda y sale en Revisar. Debajo del PDF, en todos los visores, la tabla de sus facturas con la base y el IVA de cada tipo (0, 4, 10, 21 %) y si cuadra; pulsar una fila lleva a su página. Se lee el recuadro resumen del pie (Base imponible · Tipo · Cuota · Total), con varios tipos, recargo e IRPF, mirando las otras hojas si hace falta. Revisar: «Revisión rápida» emitida o gasto con teclas (G, I, O, Intro) y decidir por proveedor; decidir el tipo ya no borra otros avisos. La descarga nueva viene vacía.
+
 ## 1.1.7 — 2026-11-03
 
 Deja de ser una demostración: un programa recién instalado empieza vacío, sin clientes, facturas ni grupos de ejemplo, y los que ya están instalados pierden solo los grupos, el servidor, el periodo y la nota de ejemplo (sus clientes, facturas y documentos no se tocan). Nuevo «Historial»: cada cosa que se hace en el programa (importar, ordenar, revisar, exportar, clientes, facturas, configuración, actualizaciones y cada vez que se abre) queda apuntada con su fecha y equipo, aparte de los datos, así que ni ordenar una carpeta nueva ni recuperar una copia la borran; se puede filtrar y descargar en CSV. Al crear un informe se propone el trimestre que toca presentar.

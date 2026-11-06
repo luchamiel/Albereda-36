@@ -1,10 +1,10 @@
 {
   "formato": 1,
-  "version": "1.1.7",
-  "fecha": "2026-11-03T20:02:44.389Z",
-  "notas": "Deja de ser una demostración: un programa recién instalado empieza vacío, sin clientes, facturas ni grupos de ejemplo, y los que ya están instalados pierden solo los grupos, el servidor, el periodo y la nota de ejemplo (sus clientes, facturas y documentos no se tocan). Nuevo «Historial»: cada cosa que se hace en el programa (importar, ordenar, revisar, exportar, clientes, facturas, configuración, actualizaciones y cada vez que se abre) queda apuntada con su fecha y equipo, aparte de los datos, así que ni ordenar una carpeta nueva ni recuperar una copia la borran; se puede filtrar y descargar en CSV. Al crear un informe se propone el trimestre que toca presentar.",
-  "paquete": "gestion-fichas-1.1.7.gfpaq",
-  "tamano": 723537,
-  "sha256": "dc986a6e02d683aec2b5bf315cf88163b4f4c1f7a2bf6c7d29dbc14e8042e5d3",
-  "firma": "Br+Vb7yPUYvT/Kheg54Nfh+g5eCozXHFkFsS3M1tMov2ASufFRE2cx3lRHCW9KBpuuGhbQbvOLqg/PVMnpoyBQ=="
+  "version": "1.1.8",
+  "fecha": "2026-11-06T17:12:04.995Z",
+  "notas": "Los PDF con varias facturas se guardan ENTEROS: un solo fichero en la carpeta, con una factura por grupo de páginas (cada una en su trimestre en el IVA y el Excel). Las páginas se agrupan por número de factura con doble revisión (otro número en una hoja, «Página X de Y», dos totales, sin total): lo dudoso se guarda y sale en Revisar. Debajo del PDF, en todos los visores, la tabla de sus facturas con la base y el IVA de cada tipo (0, 4, 10, 21 %) y si cuadra; pulsar una fila lleva a su página. Se lee el recuadro resumen del pie (Base imponible · Tipo · Cuota · Total), con varios tipos, recargo e IRPF, mirando las otras hojas si hace falta. Revisar: «Revisión rápida» emitida o gasto con teclas (G, I, O, Intro) y decidir por proveedor; decidir el tipo ya no borra otros avisos. La descarga nueva viene vacía.",
+  "paquete": "gestion-fichas-1.1.8.gfpaq",
+  "tamano": 684185,
+  "sha256": "c6b9a365a4b757b843cc6ac5ade064eb6f204f81f76e73a706f668550d48eb5f",
+  "firma": "NMLP3mudo4z0YKvSMfkaZ2BZnkJLmrV6A1ZmUHLrtL78BKJwVHiIZb/XXPGL3uA62nUplNAyoZDD1w82m+r1Aw=="
 }
