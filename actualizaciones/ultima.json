@@ -1,10 +1,10 @@
 {
   "formato": 1,
-  "version": "1.1.8",
-  "fecha": "2026-11-06T17:12:04.995Z",
-  "notas": "Los PDF con varias facturas se guardan ENTEROS: un solo fichero en la carpeta, con una factura por grupo de páginas (cada una en su trimestre en el IVA y el Excel). Las páginas se agrupan por número de factura con doble revisión (otro número en una hoja, «Página X de Y», dos totales, sin total): lo dudoso se guarda y sale en Revisar. Debajo del PDF, en todos los visores, la tabla de sus facturas con la base y el IVA de cada tipo (0, 4, 10, 21 %) y si cuadra; pulsar una fila lleva a su página. Se lee el recuadro resumen del pie (Base imponible · Tipo · Cuota · Total), con varios tipos, recargo e IRPF, mirando las otras hojas si hace falta. Revisar: «Revisión rápida» emitida o gasto con teclas (G, I, O, Intro) y decidir por proveedor; decidir el tipo ya no borra otros avisos. La descarga nueva viene vacía.",
-  "paquete": "gestion-fichas-1.1.8.gfpaq",
-  "tamano": 684185,
-  "sha256": "c6b9a365a4b757b843cc6ac5ade064eb6f204f81f76e73a706f668550d48eb5f",
-  "firma": "NMLP3mudo4z0YKvSMfkaZ2BZnkJLmrV6A1ZmUHLrtL78BKJwVHiIZb/XXPGL3uA62nUplNAyoZDD1w82m+r1Aw=="
+  "version": "1.1.9",
+  "fecha": "2026-11-12T16:21:52.850Z",
+  "notas": "Lectura hoja por hoja con tabla que se corrige: debajo de cada PDF (y de cada foto) una fila por hoja con fecha, cliente o proveedor, base, IVA, IRPF y total; «+ IVA» si la hoja lleva varios tipos; las hojas que solo continúan una factura no suman dos veces. Debajo, el resumen desplegable con la suma por tipo de IVA (0, 4, 10, 21 %), el IRPF y el total, que cambia al momento con cada cifra que se corrige. Fotos de tickets: segunda lectura ampliada de las que salen mal (más importes que cuadran) y ya no toman el nombre de la foto como número de factura. Facturas de Movistar con cifras rotas: se leen por OCR. Recuadro «IMP.BRUTO · IVA · IMPORTE IVA». Corregido: un descuento del 0 % ya no hace pasar una factura por exenta; avisos falsos de «tiene 2 páginas» en PDF con texto; el mismo PDF importado dos veces ya no se archiva dos veces; «Está bien» en Revisar ya no puede borrar las facturas de un PDF; al importar un PDF a medias el visor enseña el PDF entero.",
+  "paquete": "gestion-fichas-1.1.9.gfpaq",
+  "tamano": 698320,
+  "sha256": "9607f7531b87a8fb328936ba373752657b61ed7be08f18d3d1795e8405b90ab5",
+  "firma": "mZq5TKw3CyKGJszPIPLXMDFHH781pGqRmRQVOPz9ZOuCnb1yydXO8ujxtQYkhwSrb9nkJBiTgaFQTGVWEJXcBg=="
 }

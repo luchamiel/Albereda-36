@@ -2,6 +2,10 @@
 
 La más reciente, arriba. Cada una llega sola a los programas instalados la próxima vez que se abren.
 
+## 1.1.9 — 2026-11-12
+
+Lectura hoja por hoja con tabla que se corrige: debajo de cada PDF (y de cada foto) una fila por hoja con fecha, cliente o proveedor, base, IVA, IRPF y total; «+ IVA» si la hoja lleva varios tipos; las hojas que solo continúan una factura no suman dos veces. Debajo, el resumen desplegable con la suma por tipo de IVA (0, 4, 10, 21 %), el IRPF y el total, que cambia al momento con cada cifra que se corrige. Fotos de tickets: segunda lectura ampliada de las que salen mal (más importes que cuadran) y ya no toman el nombre de la foto como número de factura. Facturas de Movistar con cifras rotas: se leen por OCR. Recuadro «IMP.BRUTO · IVA · IMPORTE IVA». Corregido: un descuento del 0 % ya no hace pasar una factura por exenta; avisos falsos de «tiene 2 páginas» en PDF con texto; el mismo PDF importado dos veces ya no se archiva dos veces; «Está bien» en Revisar ya no puede borrar las facturas de un PDF; al importar un PDF a medias el visor enseña el PDF entero.
+
 ## 1.1.8 — 2026-11-06
 
 Los PDF con varias facturas se guardan ENTEROS: un solo fichero en la carpeta, con una factura por grupo de páginas (cada una en su trimestre en el IVA y el Excel). Las páginas se agrupan por número de factura con doble revisión (otro número en una hoja, «Página X de Y», dos totales, sin total): lo dudoso se guarda y sale en Revisar. Debajo del PDF, en todos los visores, la tabla de sus facturas con la base y el IVA de cada tipo (0, 4, 10, 21 %) y si cuadra; pulsar una fila lleva a su página. Se lee el recuadro resumen del pie (Base imponible · Tipo · Cuota · Total), con varios tipos, recargo e IRPF, mirando las otras hojas si hace falta. Revisar: «Revisión rápida» emitida o gasto con teclas (G, I, O, Intro) y decidir por proveedor; decidir el tipo ya no borra otros avisos. La descarga nueva viene vacía.
