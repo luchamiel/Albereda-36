@@ -76,7 +76,9 @@
         <a class="btn" href="https://nodejs.org/es/download" target="_blank" rel="noopener">
           Descargar Node.js (versión LTS)</a>
         <p class="muted">Elige <b>Windows Installer (.msi)</b> y la versión que ponga
-        <b>LTS</b>. En la instalación, pulsa <i>Siguiente</i> en todas las pantallas.</p>
+        <b>LTS</b>. En la instalación, pulsa <i>Siguiente</i> en todas las pantallas.
+        Hace falta la <b>18 o más nueva</b>: si el equipo ya tenía una más antigua,
+        <code>INICIAR.bat</code> lo dice y hay que instalar la LTS encima.</p>
       </div>
     </div>
 
@@ -128,7 +130,9 @@
 
   <p>La otra manera es el archivo de texto <code>.env</code>, que está dentro de la carpeta
   <code>gestion-fichas</code>, justo al lado de <code>INICIAR.bat</code>. Se abre con el Bloc
-  de notas. Lo que se ponga ahí manda sobre lo elegido en el programa.</p>
+  de notas. Lo que se ponga ahí manda sobre lo elegido en el programa. Al guardarlo, en
+  <i>Codificación</i> elige <b>UTF-8</b> (si no, una ruta con tildes, como
+  <code>D:\Asesoría</code>, puede no encontrarse).</p>
 
   <div class="card">
     <h3>Lo único obligatorio</h3>
@@ -221,8 +225,8 @@ PORT=4360
     </div>
     <p class="muted">Si cierras la ventana a medias no se pierde nada: al volver a «Importar»
     siguen ahí. Lo que se deja sin confirmar se borra solo a los 14 días.</p>
-    <p class="muted"><b>Para un lote de un mismo cliente y trimestre</b> (por ejemplo, el 4T 2022
-    de Alfonso cuando se extraiga del .rar con WinRAR): abre «Datos comunes del lote», elige
+    <p class="muted"><b>Para un lote de un mismo cliente y trimestre</b> (por ejemplo, un trimestre
+    entero que llega junto, o lo que sale de un .rar): abre «Datos comunes del lote», elige
     cliente, año y trimestre, y suelta todo.</p>
   </div>
 
@@ -245,9 +249,10 @@ PORT=4360
     documento. Debajo de los bloques queda lo que necesita ojo humano: para cada uno,
     <b>Ver</b>, <b>Corregir</b> (cambiar cliente, trimestre o tipo) o <b>Está bien</b>. Las
     correcciones solo cambian los datos del programa: el fichero no se mueve ni se borra.</p>
-    <p><b>Importes</b>: los que el programa ha leído de los PDF (hay que confirmarlos) y los que
-    faltan (escaneos: se escriben a mano). Base, IVA e IRPF calculan el total solos, y no se
-    admite un importe que no cuadre.</p>
+    <p><b>Importes</b>: los que el programa ha leído de los PDF y de los escaneos (hay que
+    confirmarlos) y los que faltan (escaneos que no se han podido leer: se escriben a mano).
+    Base, IVA e IRPF calculan el total solos, y no se admite un importe que no cuadre. Los
+    importes se escriben como siempre: <code>1.500</code> o <code>1.234,56</code>.</p>
     <div class="aviso">
       <b>Importante:</b> un importe leído a máquina es una propuesta. Antes de presentar un
       impuesto, confirma los de ese trimestre. El informe del trimestre avisa si quedan
@@ -315,6 +320,11 @@ PORT=4360
     <tbody>
       <tr><td><b>Node.js</b> (LTS)</td><td class="ok">Sí</td>
           <td>Hacer funcionar la Gestión de fichas</td><td>Gratis</td></tr>
+      <tr><td>Reconocimiento de texto (OCR) de Windows en <b>español</b></td><td>No (recomendado)</td>
+          <td>Leer los escaneos y las fotos de tickets. Viene con Windows 10/11 en español; si
+          no, se añade en <i>Configuración → Hora e idioma → Idioma → Español → Opciones →
+          Reconocimiento óptico de caracteres</i>. Sin él, los escaneos se rellenan a mano y
+          el programa lo avisa al importar.</td><td>Gratis</td></tr>
       <tr><td><b>Python</b> 3.13+</td><td>No</td>
           <td>Reordenar el archivo de facturas</td><td>Gratis</td></tr>
       <tr><td>Navegador</td><td class="ok">Sí</td>
@@ -362,6 +372,18 @@ PORT=4360
     <p><b>He cambiado el <code>.env</code> y no pasa nada</b><br>
     <span class="muted">Ese archivo solo se lee al arrancar. Cierra la ventana «Gestion de fichas (programa)» de la barra de tareas y
     vuelve a abrir <code>INICIAR.bat</code>.</span></p>
+
+    <p><b>Dice que «el programa ya está abierto en el equipo …»</b><br>
+    <span class="muted">La carpeta del programa está en una unidad de red o sincronizada y
+    otro ordenador lo tiene abierto. Si los dos lo usaran a la vez, uno borraría sin avisar lo
+    que hace el otro. Ciérralo en ese equipo (o espera 2 minutos si se apagó). Lo mejor es
+    instalar el programa en <b>un solo ordenador</b> y que los demás entren por la red
+    (<code>GF_HOST</code> y <code>GF_CLAVE_ACCESO</code>, abajo).</span></p>
+
+    <p><b>No se actualiza solo y la oficina sale a internet por un proxy</b><br>
+    <span class="muted">Pon el proxy en el <code>.env</code> (<code>HTTPS_PROXY=http://proxy:puerto</code>)
+    con Node.js 24, o instala cada versión con <i>Configuración → Actualizar desde un fichero…</i>
+    (el fichero <code>.actualizacion</code> que te pasemos).</span></p>
 
     <p><b>Desde otro ordenador no abre</b><br>
     <span class="muted">Es lo normal: por seguridad el programa solo atiende a este equipo.

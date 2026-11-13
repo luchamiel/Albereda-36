@@ -5,6 +5,7 @@ y el paquete que indica; nada más. Qué trae cada versión: [NOTAS-DE-VERSION.m
 
 ```
 instalacion/
+  Gestion-de-fichas-Albereda36.zip   el programa (con INICIAR.bat), vacío y sin la clave
   Guia-de-uso-Albereda36.html        guía de uso
 actualizaciones/
   ultima.json                  la última versión publicada (firmada)
@@ -16,15 +17,22 @@ NOTAS-DE-VERSION.md            historial de cambios, lo más nuevo arriba
 
 ## Instalar (solo la primera vez)
 
-El ZIP de instalación **no está en este repositorio**: se entrega aparte, a mano, a quien
-lo vaya a usar (lo genera `node herramientas/entrega.js` en el proyecto). Desde la 1.1.7
-va **vacío**: sin clientes, facturas ni datos de nadie.
+El programa está en [`instalacion/Gestion-de-fichas-Albereda36.zip`](instalacion/Gestion-de-fichas-Albereda36.zip).
+Va **vacío** (sin clientes, facturas ni datos de nadie) y **sin la clave de las
+actualizaciones**, que se entrega aparte.
 
-1. Descomprime `Gestion-de-fichas-Albereda36.zip`.
-2. Doble clic en `INICIAR.bat`. Si falta Node.js, se abre la guía para instalarlo.
-3. La primera vez, si avisa de que falta la carpeta de las facturas, pulsa **«Buscarla por mí»**.
+1. Descarga `instalacion/Gestion-de-fichas-Albereda36.zip` y descomprímelo.
+2. Para que se actualice solo: abre `gestion-fichas\.env` con el Bloc de notas, busca la línea
+   `# GF_ACTUALIZACIONES_TOKEN=`, quítale el `# ` del principio y pega la clave detrás del `=`.
+   Guarda. (Sin este paso el programa funciona igual, pero no se actualiza solo.)
+3. Doble clic en `INICIAR.bat`. Si falta Node.js, se abre la guía para instalarlo.
+4. La primera vez, si avisa de que falta la carpeta de las facturas, pulsa **«Buscarla por mí»**.
 
 A partir de ahí el programa se actualiza solo cada vez que se abre: no hay que volver a descargar nada.
+
+El ZIP lo genera quien mantiene el programa, siempre sin la clave:
+`node herramientas/entrega.js --canal https://api.github.com/repos/luchamiel/Albereda-36/contents/actualizaciones`
+(sin `--token-desde`), y se copia a `instalacion/`.
 
 ## Cómo funciona
 

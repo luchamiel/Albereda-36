@@ -6,5 +6,8 @@
 data/
 node_modules/
 
-# El ZIP de instalación se entrega aparte: nunca en el repositorio.
-instalacion/*.zip
+# El ZIP de instalación sí va (instalacion/), pero SIEMPRE sin la clave de las
+# actualizaciones y vacío: lo genera «node herramientas/entrega.js --canal …» sin
+# «--token-desde». Cualquier otro ZIP, no.
+*.zip
+!instalacion/Gestion-de-fichas-Albereda36.zip
