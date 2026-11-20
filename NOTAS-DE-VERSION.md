@@ -2,6 +2,10 @@
 
 La más reciente, arriba. Cada una llega sola a los programas instalados la próxima vez que se abren.
 
+## 1.1.11 — 2026-11-20
+
+Revisar › Importes: debajo de cada PDF de varias hojas, un desplegable con su tabla hoja por hoja; la flecha es el resumen de ese PDF con su aviso, y lo corregido se guarda en su factura (o se pasa la suma a la fila)
+
 ## 1.1.10 — 2026-11-14
 
 Arreglos de la tabla hoja por hoja. Corregido: al importar, quitar un tipo de IVA en la tabla guardaba la factura con el desglose antiguo y un total que no era el suyo. Cambiar solo la fecha o el nombre ya no da los importes por confirmados ni los marca como escritos a mano. Si la fecha nueva cae en otro trimestre, la fila lo avisa en rojo (la factura no se mueve sola). Recargo de equivalencia: cambiar el IVA en la tabla ya se guarda bien. En las revisiones rápidas, las teclas (1–9, G, I, O, flechas, Intro) no actúan mientras se escribe en la tabla y el tabulador pasa por sus casillas. Facturas con anticipo o certificaciones: ya no se leen como el importe del pedido que citan. Resumen: sin avisos falsos de «alguna hoja no cuadra» y el IRPF de los abonos con su signo.
